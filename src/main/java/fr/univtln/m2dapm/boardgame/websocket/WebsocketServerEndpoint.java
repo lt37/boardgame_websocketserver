@@ -22,8 +22,7 @@ public class WebsocketServerEndpoint {
 
     @OnMessage
     public void onMessage(Session session, String message) throws IOException {
-        System.out.println(message);
-        session.getBasicRemote().sendText("koukou lol");
+        System.out.println("Received " + message + " from " + session);
     }
 
 
